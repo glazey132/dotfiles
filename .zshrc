@@ -92,7 +92,12 @@ source $ZSH/oh-my-zsh.sh
 eval $(thefuck --alias)
 
 ### FUNCTIONS ###
-
+onDirectoryChange() {
+  if [ "$PWD" != "$MYOLDPWD" ]; then
+    MYOLDPWD="$PWD";
+    nvm use
+  fi
+}
 
 ### PATHS ###
 export PATH=/usr/local/opt/python/libexec/bin:$PATH
