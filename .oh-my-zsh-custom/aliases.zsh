@@ -34,7 +34,7 @@ alias gcb='git checkout -b'
 alias gb='git branch'
 alias greb='git rebase -i'
 alias grabrt='git rebase --abort'
-
+alias gbdel='git branch -D'
 # Misc.
 
 
